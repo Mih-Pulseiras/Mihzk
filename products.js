@@ -5,25 +5,25 @@ window.PRODUCTS = [
   {
     id: "p1",
     name: "Pulseira Amarela",
-    price: 60.9,
+    price: 10.0,
     category: "Geral",
     img: "img/produtos/01.jpg",
     desc: "Tamanho 38",
     featured: true
   },
   {
-    id: "p2",
-    name: "Pulseira Vermelha",
-    price: 110.9,
+    id: "Arco iris",
+    name: "Pulseira Estilo Arcoiris",
+    price: 10.0,
     category: "Novidades",
     img: "img/produtos/02.jpg",
-    desc: "Tamanho 37",
+    desc: "Mais complexa de se fazer",
     featured: false
   },
   {
     id: "p3",
     name: "Pulseira Preta",
-    price: 90.9,
+    price: 10.0,
     category: "Novidades",
     img: "img/produtos/03.jpg",
     desc: "Tamanho 37",
@@ -32,7 +32,7 @@ window.PRODUCTS = [
   {
     id: "p4",
     name: "Pulseira Roxa",
-    price: 140.0,
+    price: 10.0,
     category: "Geral",
     img: "img/produtos/04.jpg",
     desc: "Tamanho 38",
