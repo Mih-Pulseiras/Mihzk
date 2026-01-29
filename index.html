@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mih Pulseiras • Catálogo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div class="brand-name">Mih Pulseiras</div>
+          <div class="brand-sub">Catálogo</div>
+        </div>
+      </div>
+
+      <div class="tools">
+        <input id="search" class="input" placeholder="Buscar pulseira..." />
+        <select id="category" class="input">
+          <option value="all">Todas</option>
+        </select>
+        <select id="sort" class="input">
+          <option value="featured">Destaques</option>
+          <option value="price-asc">Menor preço</option>
+          <option value="price-desc">Maior preço</option>
+          <option value="name-asc">Nome A–Z</option>
+          <option value="name-desc">Nome Z–A</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Biju Mihzk</h1>
+      <p>Feitas com amor e carinho💖<b>Comprar no WhatsApp</b> 💖💖💖💖</p>
+    </section>
+
+    <section id="grid" class="grid"></section>
+
+    <section class="empty" id="empty" hidden>
+      <h2>Nada por aqui kk</h2>
+      <p>Tenta mudar a busca, categoria ou ordenação.</p>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="iconbtn" id="closeModal" title="Fechar">✕</button>
+
+      <div class="modal-body">
+        <img id="modalImg" class="modal-img" alt="" />
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <div class="modal-meta">
+            <span id="modalCategory" class="chip"></span>
+            <span id="modalPrice" class="price"></span>
+          </div>
+          <p id="modalDesc" class="desc"></p>
+
+          <div class="modal-actions">
+            <a id="whatsBtn" class="btn" target="_blank" rel="noopener">Comprar no WhatsApp</a>
+            <button id="copyBtn" class="btn secondary">Copiar texto</button>
+          </div>
+
+          <div class="hint">Dica: edite o número e a mensagem no <code>app.js</code>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
